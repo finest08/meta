@@ -1,0 +1,12 @@
+ .country {
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+  
+.logo {
+    justify-content: center;
+    height: 200px;
+    object-fit: contain;
+    width: 400;
+}

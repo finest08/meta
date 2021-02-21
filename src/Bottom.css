@@ -1,0 +1,28 @@
+.root {
+    flex-Grow: 1,
+}
+    
+.meta {
+    color: white;
+    padding: 110px;
+    align-items: center;
+}
+
+.center {
+    align-items: center;
+    flex-Grow: 1;
+}
+
+.bottom {
+    align-content: center;
+    height: 50px;
+    width: 50px;
+
+}
+.signature {
+    height: 130px;
+    object-fit: contain;
+    
+    
+    
+}

@@ -1,0 +1,29 @@
+.header {
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    
+    
+    
+    
+}
+.iconleft {
+    
+    color:red;
+}
+
+.iconright {
+    
+    color: red;
+}
+
+.fontcolor {
+    color: white;
+}
+
+.centreicon {
+    height: 60px;
+    object-fit: contain;
+    width: 90;
+}
