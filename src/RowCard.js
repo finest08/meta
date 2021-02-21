@@ -10,9 +10,6 @@ import Typography from '@material-ui/core/Typography';
 import './RowCard.css';
 
 
-
-
-
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
@@ -67,7 +64,7 @@ export default function RowCard( { title, fetchUrl} ) {
                                 <Typography gutterBottom variant="p" component="p" align="left">
                                 </Typography>
                                 <Typography component="p" variant="body1" align="left">
-                                    {article.description}
+                                    {article.content}
                                 </Typography>
                             </Typography>
                         </CardContent>

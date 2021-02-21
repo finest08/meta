@@ -23,7 +23,7 @@ function Aus() {
         <Typography className="country" variant="h1">
           Australia
         </Typography>
-          <Grid item={6} >
+          <Grid item={2} >
           <Grid container direction="row" justify="space-evenly" align="center" className="side">
             <RowCard title="Australia" fetchUrl={requests.fetchAu} />
           </Grid>
