@@ -8,8 +8,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   logo: {
     alignContent: 'center',
-    height: 150,  //600
-    width: 250, //1150
+    height: 130,  //600
+    width: 230, //1150
     objectFit: 'contain',
     
     },

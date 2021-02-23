@@ -30,13 +30,14 @@ const useStyles = makeStyles({
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  paddingBottom: 60,
+  paddingBottom: 80,
   },
 
   country: {
   textAlign: 'center',
   color: 'white',
-  paddingTop: 100,
+    paddingTop: 100,
+  fontSize: 70,
   },
   
   logo: {

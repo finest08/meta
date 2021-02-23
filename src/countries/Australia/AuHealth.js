@@ -36,7 +36,8 @@ const useStyles = makeStyles({
   country: {
   textAlign: 'center',
   color: 'white',
-  paddingTop: 100,
+    paddingTop: 100,
+  fontSize: 65,
   },
   
   logo: {

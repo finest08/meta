@@ -37,6 +37,7 @@ const useStyles = makeStyles({
   textAlign: 'center',
   color: 'white',
   paddingTop: 100,
+  fontSize: 65,
   },
   
   logo: {
