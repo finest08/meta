@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Alt from '../components/Alt';
 import Bottom from '../components/Bottom';
 import Typography from '@material-ui/core/Typography';
-import Logo from '../Logo';
+import Logo from '../components/Logo';
 import ButtonRow from '../components/ButtonRow';
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
-import Meeta from './imgs/Meeta.png';
+import Meeta from '../imgs/Meeta.png';
 import { makeStyles } from '@material-ui/core/styles';
 
 

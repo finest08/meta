@@ -4,7 +4,7 @@ import { Grid, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Bottom from './components/Bottom';
 import { Link as RouterLink } from 'react-router-dom';
-import Logo from './Logo';
+import Logo from './components/Logo';
 import { makeStyles } from '@material-ui/core/styles';
 
 
