@@ -1,14 +1,13 @@
 import React from 'react';
-import RowCard from '../components/RowCard';
-import requests from '../requests';
+import RowCard from '../../components/RowCard';
+import requests from '../../requests';
 import Grid from '@material-ui/core/Grid';
-import Alt from '../components/Alt';
-import Bottom from '../components/Bottom';
+import Alt from '../../components/Alt';
+import Bottom from '../../components/Bottom';
 import Typography from '@material-ui/core/Typography';
-import Logo from '../components/Logo';
-import ButtonRow from '../components/ButtonRow';
-
-
+import Logo from '../../components/Logo';
+import CountryRow from '../../components/CountryRow';
+import CategoryRow from './AuCategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -37,15 +36,21 @@ const useStyles = makeStyles({
   country: {
   textAlign: 'center',
   color: 'white',
-  padding: 120,
+  paddingTop: 100,
   },
   
   logo: {
-    justifyContent: 'center',
-    height: 200,
-    objectFit: 'contain',
-    width: 400,
-},
+  justifyContent: 'center',
+  height: 200,
+  objectFit: 'contain',
+  width: 400,
+  },
+
+  category: {
+  textAlign: 'center',
+  
+
+  },
 });
 
 
@@ -53,7 +58,7 @@ const useStyles = makeStyles({
 
 
 
-function Aus() {
+function AuScience() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
@@ -63,17 +68,20 @@ function Aus() {
         </Grid> 
         <Grid direction="column" align="center">
           <Logo className="logo"/>
-          <ButtonRow />     
+          <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">
-          Australia
+          Australian Science
         </Typography>
+        <Grid className={classes.category}>
+          <CategoryRow />
+        </Grid>
           <Grid item={2} >
           <Grid container direction="row" justify="space-evenly" align="center" className={classes.side}>
-            <RowCard title="Australia" fetchUrl={requests.fetchAu} />
+            <RowCard title="Australia" fetchUrl={requests.fetchAuScience} />
           </Grid>
           <Grid direction="column" align="center">
-            <ButtonRow />
+            <CountryRow />
             <Bottom />
           </Grid>
         </Grid>
@@ -82,4 +90,4 @@ function Aus() {
   );
 }
 
-export default Aus;
+export default AuScience;

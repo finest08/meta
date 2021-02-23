@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(2),
   
   },
+  
   header: {
     
     justifyContent: 'space-between',
@@ -47,6 +48,8 @@ const useStyles = makeStyles((theme) => ({
     height: 60,
     objectFit: 'contain',
     width: 90,
+  
+    
   },
 }));
 

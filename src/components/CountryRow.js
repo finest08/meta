@@ -23,12 +23,12 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function ButtonRow() {
+function CountryRow() {
     const classes = useStyles();
     return (
         <Grid classes={classes.root}>
-            <Button  color="secondary" component={RouterLink} to={`/au`}>
-                <Typography className={classes.font}>
+            <Button component={RouterLink} to={`/au`}>
+                <Typography color="secondary" className={classes.font}>
                     Australia
                 </Typography>
             </Button>
@@ -80,4 +80,4 @@ function ButtonRow() {
     )
 }
 
-export default ButtonRow;
+export default CountryRow;

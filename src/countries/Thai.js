@@ -6,7 +6,7 @@ import Alt from '../components/Alt';
 import Typography from '@material-ui/core/Typography';
 import Bottom from '../components/Bottom';
 import Logo from '../components/Logo';
-import ButtonRow from '../components/ButtonRow';
+import CountryRow from '../components/CountryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -58,7 +58,7 @@ function Thai() {
         </Grid>
         <Grid direction="column" align="center">
           <Logo />
-          <ButtonRow />
+          <CountryRow />
         </Grid>
         <Typography className={classes.country} variant="h1">
          Thailand
@@ -69,7 +69,7 @@ function Thai() {
           </Grid>
         </Grid>
         <Grid direction="column" align="center">
-          <ButtonRow />
+          <CountryRow />
           <Bottom />
         </Grid>
       </div>

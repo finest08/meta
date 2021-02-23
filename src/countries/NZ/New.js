@@ -1,12 +1,13 @@
 import React from 'react';
-import RowCard from '../components/RowCard';
-import requests from '../requests';
+import RowCard from '../../components/RowCard';
+import requests from '../../requests';
 import Grid from '@material-ui/core/Grid';
-import Alt from '../components/Alt';
+import Alt from '../../components/Alt';
 import Typography from '@material-ui/core/Typography';
-import Bottom from '../components/Bottom';
-import Logo from '../components/Logo';
-import ButtonRow from '../components/ButtonRow'; 
+import Bottom from '../../components/Bottom';
+import Logo from '../../components/Logo';
+import CountryRow from '../../components/CountryRow';
+import NzCategoryRow from './NzCategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -35,7 +36,7 @@ const useStyles = makeStyles({
   country: {
   textAlign: 'center',
   color: 'white',
-  padding: 120,
+  paddingTop: 100, // <<<<< brings CategoryRow and Country Header together
   },
   
   logo: {
@@ -43,7 +44,13 @@ const useStyles = makeStyles({
     height: 200,
     objectFit: 'contain',
     width: 400,
-},
+  
+  },
+  category: {
+  textAlign: 'center',
+  
+
+  },
 });
 
 
@@ -57,18 +64,21 @@ function New() {
         </Grid>
         <Grid direction="column" align="center">
           <Logo />
-          <ButtonRow />        
+          <CountryRow />        
         </Grid>
         <Typography className={classes.country} variant="h1">
           New Zealand
         </Typography>
+        <Grid className={classes.category}>
+          <NzCategoryRow />
+        </Grid>
         <Grid item={12} >
           <Grid container direction="row" justify="space-evenly" alignItems="center" className={classes.side}>
             <RowCard className={classes.side} title="New Zealand" fetchUrl={requests.fetchNz} />
           </Grid>
         </Grid>
         <Grid direction="column" align="center">
-          <ButtonRow />
+          <CountryRow />
           <Bottom />
         </Grid>
       </div>
