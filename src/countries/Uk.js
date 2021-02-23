@@ -1,12 +1,12 @@
 import React from 'react';
-import RowCard from '../RowCard';
+import RowCard from '../components/RowCard';
 import requests from '../requests';
 import Grid from '@material-ui/core/Grid';
-import Alt from '../Alt';
-import Bottom from '../Bottom';
+import Alt from '../components/Alt';
+import Bottom from '../components/Bottom';
 import Typography from '@material-ui/core/Typography';
 import Logo from '../Logo';
-import ButtonRow from '../ButtonRow';
+import ButtonRow from '../components/ButtonRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
