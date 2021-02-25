@@ -7,7 +7,7 @@ import Bottom from '../../components/Bottom';
 import Typography from '@material-ui/core/Typography';
 import Logo from '../../components/Logo';
 import CountryRow from '../../components/CountryRow';
-import CategoryRow from './AuCategoryRow';
+import CategoryRow from './CategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
