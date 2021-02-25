@@ -12,12 +12,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   App: {
     margin: 0,
     backgroundColor: 'rgb(1, 14, 39)',
+    "& > *": {
+      margin: theme.spacing(10)
+    }
   },
-
 
   title: {
   textAlign: 'center',
@@ -27,10 +29,11 @@ const useStyles = makeStyles({
   },
 
   side: {
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-  paddingBottom: 80,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingBottom: 80,
+  
   },
 
   country: {
@@ -49,10 +52,8 @@ const useStyles = makeStyles({
 
   category: {
   textAlign: 'center',
-  
-
   },
-});
+}));
 
 
 
@@ -61,7 +62,7 @@ function Aus() {
   return (
     <div className={classes.App}>
       <div>
-        <Grid>
+        <Grid >
           <Alt />
         </Grid> 
         <Grid direction="column" align="center">
@@ -74,8 +75,8 @@ function Aus() {
         <Grid className={classes.category}>
           <CategoryRow />
         </Grid>
-          <Grid item={2} >
-          <Grid container direction="row" justify="space-evenly" align="center" className={classes.side}>
+          <Grid item spacing={6}>
+          <Grid container direction="row" justify="space-evenly" alignItems="center" className={classes.side}>
             <RowCard title="Australia" fetchUrl={requests.fetchAu} />
           </Grid>
           <Grid direction="column" align="center">

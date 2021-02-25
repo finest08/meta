@@ -55,10 +55,6 @@ const useStyles = makeStyles({
 });
 
 
-
-
-
-
 function AuEntertainment() {
   const classes = useStyles();
   return (
