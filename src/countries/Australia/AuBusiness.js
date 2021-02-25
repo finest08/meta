@@ -55,7 +55,7 @@ const useStyles = makeStyles({
 });
 
 
-function AuEntertainment() {
+function ItEntertainment() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
@@ -68,7 +68,7 @@ function AuEntertainment() {
           <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">
-          Australian Business
+          Italian Business
         </Typography>
         <Grid className={classes.category}>
           <CategoryRow />
@@ -87,4 +87,4 @@ function AuEntertainment() {
   );
 }
 
-export default AuEntertainment;
+export default ItEntertainment;

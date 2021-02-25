@@ -7,7 +7,7 @@ import Bottom from '../../components/Bottom';
 import Typography from '@material-ui/core/Typography';
 import Logo from '../../components/Logo';
 import CountryRow from '../../components/CountryRow';
-import CategoryRow from './AuCategoryRow';
+import CategoryRow from './CategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-function Aus() {
+function Italy() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
@@ -70,14 +70,14 @@ function Aus() {
           <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">
-          Australia
+          Italy
         </Typography>
         <Grid className={classes.category}>
           <CategoryRow />
         </Grid>
           <Grid>
           <Grid container className={classes.side}>
-            <RowCard title="Australia" fetchUrl={requests.fetchAu} />
+            <RowCard title="Australia" fetchUrl={requests.fetchIt} />
           </Grid>
           <Grid direction="column" align="center">
             <CountryRow />
@@ -89,4 +89,4 @@ function Aus() {
   );
 }
 
-export default Aus;
+export default Italy;

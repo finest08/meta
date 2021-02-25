@@ -4,7 +4,6 @@ import Menu from './Menu';
 import New from './countries/NZ/New';
 
 import Uk from './countries/Uk';
-import Italy from './countries/Italy';
 import Germany from './countries/Germany';
 import Usa from './countries/Usa';
 import Slovakia from './countries/Slovakia';
@@ -19,6 +18,13 @@ import AuTechnology from './countries/Australia/AuTechnology';
 import AuSports from './countries/Australia/AuSports';
 import AuScience from './countries/Australia/AuScience';
 
+import Italy from './countries/Italy/Italy';
+import ItBusiness from './countries/Italy/ItBusiness';
+import ItEntertainment from './countries/Italy/ItEntertainment';
+import ItHealth from './countries/Italy/ItHealth';
+import ItTechnology from './countries/Italy/ItTechnology';
+import ItSports from './countries/Italy/ItSports';
+import ItScience from './countries/Italy/ItScience';
 
 
 
@@ -26,6 +32,12 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path="/it/business" component={ItBusiness} />
+        <Route exact path="/it/entertainment" component={ItEntertainment} />
+        <Route exact path="/it/health" component={ItHealth} />
+        <Route exact path="/it/technology" component={ItTechnology} />
+        <Route exact path="/it/sports" component={ItSports} />
+        <Route exact path="/it/science" component={ItScience} />
         <Route exact path="/au/science" component={AuScience} />
         <Route exact path="/au/sports" component={AuSports} />
         <Route exact path="/au/technology" component={AuTechnology} />

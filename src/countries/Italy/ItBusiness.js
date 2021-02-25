@@ -7,19 +7,18 @@ import Bottom from '../../components/Bottom';
 import Typography from '@material-ui/core/Typography';
 import Logo from '../../components/Logo';
 import CountryRow from '../../components/CountryRow';
-import CategoryRow from './AuCategoryRow';
+import CategoryRow from './CategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
 
-const useStyles = makeStyles((theme) => ({
+
+const useStyles = makeStyles({
   App: {
     margin: 0,
     backgroundColor: 'rgb(1, 14, 39)',
-    "& > *": {
-      margin: theme.spacing(10)
-    }
   },
+
 
   title: {
   textAlign: 'center',
@@ -29,18 +28,17 @@ const useStyles = makeStyles((theme) => ({
   },
 
   side: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingBottom: 80,
-  
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  paddingBottom: 60,
   },
 
   country: {
   textAlign: 'center',
   color: 'white',
-    paddingTop: 100,
-  fontSize: 70,
+  paddingTop: 100,
+  fontSize: 65,
   },
   
   logo: {
@@ -52,17 +50,18 @@ const useStyles = makeStyles((theme) => ({
 
   category: {
   textAlign: 'center',
+  
+
   },
-}));
+});
 
 
-
-function Aus() {
+function ItBusiness() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
       <div>
-        <Grid >
+        <Grid>
           <Alt />
         </Grid> 
         <Grid direction="column" align="center">
@@ -70,14 +69,14 @@ function Aus() {
           <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">
-          Australia
+          Italian Business
         </Typography>
         <Grid className={classes.category}>
           <CategoryRow />
         </Grid>
-          <Grid>
-          <Grid container className={classes.side}>
-            <RowCard title="Australia" fetchUrl={requests.fetchAu} />
+          <Grid item={2} >
+          <Grid container direction="row" justify="space-evenly" align="center" className={classes.side}>
+            <RowCard title="Australia Business" fetchUrl={requests.fetchItBusiness} />
           </Grid>
           <Grid direction="column" align="center">
             <CountryRow />
@@ -89,4 +88,4 @@ function Aus() {
   );
 }
 
-export default Aus;
+export default ItBusiness;
