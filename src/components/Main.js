@@ -7,12 +7,12 @@ const images = [
   {
     url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpixfeeds.com%2Fimages%2Fphotography%2Fnature%2F1280-679774946-sky-with-clouds.jpg&f=1&nofb=1',
     title: 'Weather',
-    width: '40%',
+    width: '30%',
   },
   {
     url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fresources.stuff.co.nz%2Fcontent%2Fdam%2Fimages%2F1%2Fq%2Fl%2Fv%2F5%2Fs%2Fimage.related.StuffLandscapeSixteenByNine.710x400.1qsdxj.png%2F1531451432661.jpg&f=1&nofb=1',
     title: 'Traffic Report',
-    width: '30%',
+    width: '40%',
   },
   {
     url: '/static/images/grid-list/camera.jpg',
