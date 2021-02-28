@@ -68,7 +68,7 @@ function AuBusiness() {
           <Alt />
         </Grid> 
         <Grid direction="column" align="center">
-          <Logo className="logo"/>
+          
           <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">

@@ -19,8 +19,10 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     },
     font: {
-        fontSize: 20,
-    }
+        fontSize: 29,
+        paddingTop: 50,
+    },
+    
 }));
 
 function CountryRow() {

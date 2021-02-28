@@ -9,7 +9,7 @@ import Logo from '../../components/Logo';
 import CountryRow from '../../components/CountryRow';
 import CategoryRow from './CategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
-
+import Main from '../../components/Main';
 
 const useStyles = makeStyles({
   App: {
@@ -65,7 +65,7 @@ function Aus() {
           <Alt />
         </Grid> 
         <Grid direction="column" align="center">
-          <Logo className="logo"/>
+          <Main />
           <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">
