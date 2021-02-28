@@ -36,8 +36,8 @@ const useStyles = makeStyles({
   country: {
   textAlign: 'center',
   color: 'white',
-  paddingTop: 100,
-  fontSize: 65,
+  paddingTop: 30,
+  fontSize: 70,
   },
   
   logo: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles({
 });
 
 
-function ItEntertainment() {
+function AuBusiness() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
@@ -68,7 +68,7 @@ function ItEntertainment() {
           <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">
-          Italian Business
+          Australia Business
         </Typography>
         <Grid className={classes.category}>
           <CategoryRow />
@@ -87,4 +87,4 @@ function ItEntertainment() {
   );
 }
 
-export default ItEntertainment;
+export default AuBusiness;

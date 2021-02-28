@@ -1,13 +1,14 @@
 import React from 'react';
-import RowCard from '../components/RowCard';
-import requests from '../requests';
+import RowCard from '../../components/RowCard';
+import requests from '../../requests';
 import Grid from '@material-ui/core/Grid';
-import Alt from '../components/Alt';
-import Bottom from '../components/Bottom';
+import Alt from '../../components/Alt';
+import Bottom from '../../components/Bottom';
 import Typography from '@material-ui/core/Typography';
-import Logo from '../components/Logo';
-import CountryRow from '../components/CountryRow';
+import Logo from '../../components/Logo';
+import CountryRow from '../../components/CountryRow';
 import { makeStyles } from '@material-ui/core/styles';
+import CategoryRow from './CategoryRow';
 
 
 
@@ -33,9 +34,10 @@ const useStyles = makeStyles({
   },
 
   country: {
-  textAlign: 'center',
-  color: 'white',
-  padding: 120,
+    textAlign: 'center',
+    color: 'white',
+    paddingTop: 30,
+    fontSize: 70,
   },
   
   logo: {
@@ -43,7 +45,12 @@ const useStyles = makeStyles({
     height: 200,
     objectFit: 'contain',
     width: 400,
-},
+  },
+  category: {
+    textAlign: 'center',
+  
+
+  },
 });
 
 
@@ -61,8 +68,11 @@ function New() {
           <CountryRow />
         </Grid>
         <Typography className={classes.country} variant="h1">
-         United Kingdom
+          United Kingdom
         </Typography>
+        <Grid className={classes.category}>
+          <CategoryRow />
+        </Grid>
         <Grid item={12} >
           <Grid container direction="row" justify="space-evenly" alignItems="center" className={classes.side}>
             <RowCard className={classes.side} fetchUrl={requests.fetchUk} />

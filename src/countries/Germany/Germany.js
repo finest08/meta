@@ -1,13 +1,14 @@
 import React from 'react';
-import RowCard from '../components/RowCard';
-import requests from '../requests';
+import RowCard from '../../components/RowCard';
+import requests from '../../requests';
 import Grid from '@material-ui/core/Grid';
-import Alt from '../components/Alt';
+import Alt from '../../components/Alt';
 import Typography from '@material-ui/core/Typography';
-import Bottom from '../components/Bottom';
-import Logo from '../components/Logo';
-import CountryRow from '../components/CountryRow';
+import Bottom from '../../components/Bottom';
+import Logo from '../../components/Logo';
+import CountryRow from '../../components/CountryRow';
 import { makeStyles } from '@material-ui/core/styles';
+import CategoryRow from './CategoryRow';
 
 
 
@@ -33,9 +34,10 @@ const useStyles = makeStyles({
   },
 
   country: {
-  textAlign: 'center',
-  color: 'white',
-  padding: 120,
+    textAlign: 'center',
+    color: 'white',
+    paddingTop: 30,
+    fontSize: 70,
   },
   
   logo: {
@@ -43,12 +45,16 @@ const useStyles = makeStyles({
     height: 200,
     objectFit: 'contain',
     width: 400,
-},
+  },
+  category: {
+    textAlign: 'center',
+  
+
+  },
 });
 
 
-
-function Thai() {
+function Germany() {
   const classes = useStyles();
   return (
     <div className={classes.App}>
@@ -61,20 +67,23 @@ function Thai() {
           <CountryRow />
         </Grid>
         <Typography className={classes.country} variant="h1">
-         Thailand
+          Germany
         </Typography>
+        <Grid className={classes.category}>
+          <CategoryRow />
+        </Grid>
         <Grid item={12} >
           <Grid container direction="row" justify="space-evenly" alignItems="center" className={classes.side}>
-            <RowCard className={classes.side} title="Thailand" fetchUrl={requests.fetchTh} />
+            <RowCard className={classes.side} title="Germany" fetchUrl={requests.fetchGr} />
           </Grid>
         </Grid>
         <Grid direction="column" align="center">
           <CountryRow />
           <Bottom />
         </Grid>
-      </div>
+      </div>  
     </div>
   );
 }
 
-export default Thai;
+export default Germany;

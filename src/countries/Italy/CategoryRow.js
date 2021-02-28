@@ -30,7 +30,7 @@ function ItalyCategoryRow() {
     const classes = useStyles();
     return (
         <Grid classes={classes.root}>
-            <Button size="large" component={RouterLink} to={`/it`}>
+            <Button size="large" component={RouterLink} to={`/italy`}>
                 <Typography className={classes.font}>
                     General
                 </Typography>

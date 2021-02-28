@@ -19,49 +19,49 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     },
     font: {
-        fontSize: 25,
+        fontSize: 18,
         color: 'white',
 
     }
 }));
 
 
-function NzCategoryRow() {
+function CategoryRow() {
     const classes = useStyles();
     return (
         <Grid classes={classes.root}>
-            <Button size="large" component={RouterLink} to={`/nz`}>
+            <Button size="large" component={RouterLink} to={`/slovakia`}>
                 <Typography className={classes.font}>
                     General
                 </Typography>
             </Button>
-            <Button color="secondary" component={RouterLink} to={`/nz/business`}>
+            <Button color="secondary" component={RouterLink} to={`/sk/business`}>
                 <Typography className={classes.font}>
                     Business
                 </Typography>
             </Button>
-            <Button size="large" color="primary" component={RouterLink} to={`/nz/entertainment`}>
+            <Button size="large" color="primary" component={RouterLink} to={`/sk/entertainment`}>
                 <Typography className={classes.font}>
                     Entertainment
                 </Typography>
             </Button>
             
-            <Button size="large" color="secondary" component={RouterLink} to={`/nz/health`}>
+            <Button size="large" color="secondary" component={RouterLink} to={`/sk/health`}>
                 <Typography className={classes.font}>
                     Health
                 </Typography>
             </Button>
-            <Button size="large" color="secondary" component={RouterLink} to={`/au/technology`}>
+            <Button size="large" color="secondary" component={RouterLink} to={`/sk/technology`}>
                 <Typography className={classes.font}>
                     Technology
                 </Typography>
             </Button>
-            <Button size="large" color="secondary" component={RouterLink} to={`/nz/sports`}>
+            <Button size="large" color="secondary" component={RouterLink} to={`/sk/sports`}>
                 <Typography className={classes.font}>
                     Sports
                 </Typography>
             </Button>
-            <Button size="large" color="secondary" component={RouterLink} to={`/nz/science`}>
+            <Button size="large" color="secondary" component={RouterLink} to={`/sk/science`}>
                 <Typography className={classes.font}>
                     Science
                 </Typography>
@@ -74,4 +74,4 @@ function NzCategoryRow() {
     )
 }
 
-export default NzCategoryRow;
+export default CategoryRow;

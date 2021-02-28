@@ -11,14 +11,14 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 500,
-    maxHeight: 1200,
+    maxWidth: 800,
+    maxHeight: 900,
     
   },
   media: {
     objectFit: 'Contain',
     height: 300,
-    width: 400,
+    width: 620,
   },
 });
 
@@ -43,7 +43,7 @@ export default function RowCard( { title, fetchUrl} ) {
         <Container>
           <Grid container spacing={3}>
             {headlines.articles.map((article, index) =>
-              <Grid item xs={12} sm={4}>
+              <Grid item xs={12} sm={6}>
                 <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia

@@ -1,13 +1,14 @@
 import React from 'react';
-import RowCard from '../components/RowCard';
-import requests from '../requests';
+import RowCard from '../../components/RowCard';
+import requests from '../../requests';
 import Grid from '@material-ui/core/Grid';
-import Alt from '../components/Alt';
+import Alt from '../../components/Alt';
 import Typography from '@material-ui/core/Typography';
-import Bottom from '../components/Bottom';
-import Logo from '../components/Logo';
-import CountryRow from '../components/CountryRow';
+import Bottom from '../../components/Bottom';
+import Logo from '../../components/Logo';
+import CountryRow from '../../components/CountryRow';
 import { makeStyles } from '@material-ui/core/styles';
+import CategoryRow from './CategoryRow';
 
 
 
@@ -33,17 +34,23 @@ const useStyles = makeStyles({
   },
 
   country: {
-  textAlign: 'center',
-  color: 'white',
-  padding: 120,
+    textAlign: 'center',
+    color: 'white',
+    paddingTop: 30,
+    fontSize: 70,
   },
   
   logo: {
     justifyContent: 'center',
     height: 200,
     objectFit: 'contain',
-    width: 400,
-},
+    width: 400, 
+  },
+  category: {
+    textAlign: 'center',
+  
+
+  },
 });
 
 
@@ -60,8 +67,11 @@ function Usa() {
           <CountryRow />
         </Grid>
         <Typography className={classes.country} variant="h1">
-         United States
+          United States
         </Typography>
+        <Grid className={classes.category}>
+          <CategoryRow />
+        </Grid>
         <Grid item={12} >
           <Grid container direction="row" justify="space-evenly" alignItems="center" className={classes.side}>
             <RowCard className={classes.side} title="United States" fetchUrl={requests.fetchUs} />

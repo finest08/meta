@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Bottom from '../../components/Bottom';
 import Logo from '../../components/Logo';
 import CountryRow from '../../components/CountryRow';
-import NzCategoryRow from './NzCategoryRow';
+import NzCategoryRow from './CategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -20,23 +20,25 @@ const useStyles = makeStyles({
 
 
   title: {
-  textAlign: 'center',
-  color: 'white',
-  paddingBottom: 60,
+    textAlign: 'center',
+    color: 'white',
+    paddingBottom: 60,
 
   },
 
   side: {
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-  paddingBottom: 60,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingBottom: 60,
   },
 
   country: {
-  textAlign: 'center',
-  color: 'white',
-  paddingTop: 100, // <<<<< brings CategoryRow and Country Header together
+    textAlign: 'center',
+    color: 'white',
+    paddingTop: 30,
+    fontSize: 70,
+    // <<<<< brings CategoryRow and Country Header together
   },
   
   logo: {

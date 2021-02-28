@@ -11,7 +11,6 @@ import CategoryRow from './CategoryRow';
 import { makeStyles } from '@material-ui/core/styles';
 
 
-
 const useStyles = makeStyles({
   App: {
     margin: 0,
@@ -36,8 +35,8 @@ const useStyles = makeStyles({
   country: {
   textAlign: 'center',
   color: 'white',
-    paddingTop: 100,
-  fontSize: 65,
+  paddingTop: 30,
+  fontSize: 70,
   },
   
   logo: {
@@ -72,14 +71,14 @@ function ItScience() {
           <CountryRow />     
         </Grid>
         <Typography className={classes.country} variant="h1">
-          Italian Science
+          Italy Science
         </Typography>
         <Grid className={classes.category}>
           <CategoryRow />
         </Grid>
           <Grid item={2} >
           <Grid container direction="row" justify="space-evenly" align="center" className={classes.side}>
-            <RowCard title="Australia" fetchUrl={requests.fetchItScience} />
+            <RowCard title="Italy" fetchUrl={requests.fetchItScience} />
           </Grid>
           <Grid direction="column" align="center">
             <CountryRow />

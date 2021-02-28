@@ -36,8 +36,8 @@ const useStyles = makeStyles({
   country: {
   textAlign: 'center',
   color: 'white',
-    paddingTop: 100,
-  fontSize: 65,
+    paddingTop: 30,
+  fontSize: 70,
   },
   
   logo: {
@@ -79,7 +79,7 @@ function AuBusiness() {
         </Grid>
           <Grid item={2} >
           <Grid container direction="row" justify="space-evenly" align="center" className={classes.side}>
-            <RowCard title="Australia" fetchUrl={requests.fetchAuEntertaiment} />
+            <RowCard title="Australia" fetchUrl={requests.fetchAuEntertainment} />
           </Grid>
           <Grid direction="column" align="center">
             <CountryRow />

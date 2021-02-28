@@ -8,7 +8,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
-import M from '../imgs/M.png';
+import Me from '../imgs/Me.png';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link as RouterLink } from 'react-router-dom';
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   centreicon: {
-    height: 60,
+    height: 70,
     objectFit: 'contain',
     width: 90,
   
@@ -99,7 +99,7 @@ function BackToTop(props) {
       <AppBar className={classes.padding} >
         <Toolbar className={classes.header}>
           <IconButton component={RouterLink} to={`/nz`}>
-            <img src={M} alt="meta logo" className={classes.centreicon} />
+            <img src={Me} alt="meta logo" className={classes.centreicon} />
           </IconButton>
           <IconButton component={RouterLink} to={`/menu`}>
             <MenuIcon className={classes.iconright} />
