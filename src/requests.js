@@ -6,6 +6,20 @@ const API_KEY = "716ebd9ae1834e8ea0236a8e97b4b4dd";
 // finestmw = 'ce6b71ce59e44a2ea1ce15332e97e868'
 // mistaboofy = 'c1dfc9d7addb4d0aa51b683a937ba57c'
 
+// const countries = [
+//     country ('au'),
+//     country ('it'), 
+//     country ('nz')
+// ]
+
+// const categories = [
+//     item ('health'),
+//     item ('business'), 
+//     item ('entertainment')
+// ]
+
+
+
 const requests = {
     
     fetchAu: `https://newsapi.org/v2/top-headlines?country=au&apiKey=${API_KEY}`,

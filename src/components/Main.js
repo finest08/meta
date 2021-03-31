@@ -15,8 +15,8 @@ const images = [
     width: '40%',
   },
   {
-    url: '/static/images/grid-list/camera.jpg',
-    title: 'Camera',
+    url: 'https://www.adprintonline.com/images/resources/whats_new/whats-new-header.png',
+    title: 'Whats new?',
     width: '30%',
   },
 ];
